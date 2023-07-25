@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-annotations-mcgm
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/tnevrlka-test/build-e2e-kvfd-tenant/test-annotations-app-ygmu/test-annotations-mcgm@sha256:6e1f4c0006e8c14aa91d52e9ef968ffce62200e1647305a5ac67feb40162beeb
+        name: my-nginx
+        resources: {}
+status: {}
